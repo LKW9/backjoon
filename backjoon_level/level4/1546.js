@@ -10,3 +10,15 @@
 
 // 출력
 // 첫째 줄에 새로운 평균을 출력한다. 실제 정답과 출력값의 절대오차 또는 상대오차가 10-2 이하이면 정답이다.
+
+const input = require('fs').readFileSync('example.txt').toString().trim().split("\n")
+function test(input) {
+    const arr = input[1].split(" ").map(Number)
+    const max = Math.max(...arr)
+    let total = 0
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i] / max * 100
+    }
+    console.log(total / input[0]);
+}
+test(input)
