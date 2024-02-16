@@ -9,7 +9,6 @@
 
 const input = require('fs').readFileSync('example.txt').toString().trim().split("\n")
 function test(input) {
-    console.log(input);
     for (let i = 1; i < +input[0] + 1; i++) {
         console.log(input[i].slice(0,1) + input[i].slice(-1));
     }
