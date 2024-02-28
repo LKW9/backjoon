@@ -22,9 +22,8 @@ function test(input) {
       xMax = Math.max(xMax, input[i][0] + 10);
       yMax = Math.max(yMax, input[i][1] + 10);
     }
-    
     let board = Array.from(Array(xMax), () => Array(yMax).fill(0));
-    
+    console.log(board);
     for (let i = 0; i < n; i++) {
       for (let j = input[i][0]; j < input[i][0] + 10; j++) {
         for (let k = input[i][1]; k < input[i][1] + 10; k++) {
