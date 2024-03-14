@@ -24,7 +24,7 @@
 // /dev/stdin
 const input = require('fs').readFileSync('example.txt').toString().trim()
 function test(input) {
-    console.log(`${(BigInt(input) * BigInt(input - 1) * BigInt(input - 2)) / BigInt(6)}`);
+    console.log(`${(BigInt(input) * BigInt(input) * BigInt(input))}`);
     console.log(3);
 }
 test(input)

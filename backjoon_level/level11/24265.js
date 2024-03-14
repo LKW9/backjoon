@@ -24,7 +24,11 @@
 // /dev/stdin
 const input = require('fs').readFileSync('example.txt').toString().trim()
 function test(input) {
-    console.log(`${BigInt(input) * BigInt(input) * BigInt(input)}`);
-    console.log(3);
+    let a = 0
+    for (let i = 0; i < input; i++) {
+        a += i
+    }
+    console.log(a);
+    console.log(2);
 }
 test(input)

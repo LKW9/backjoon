@@ -23,11 +23,7 @@
 // /dev/stdin
 const input = require('fs').readFileSync('example.txt').toString().trim()
 function test(input) {
-    let a = 0
-    for (let i = 0; i < input; i++) {
-        a += i
-    }
-    console.log(a);
+    console.log(input * input);
     console.log(2);
 }
 test(input)

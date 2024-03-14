@@ -19,3 +19,10 @@
 // 출력
 // f(n), c, n0가 O(n) 정의를 만족하면 1, 아니면 0을 출력한다.
 
+// /dev/stdin
+const input = require('fs').readFileSync('example.txt').toString().trim()
+function test(input) {
+    console.log(`${(BigInt(input) * BigInt(input - 1) * BigInt(input - 2)) / BigInt(6)}`);
+    console.log(3);
+}
+test(input)
